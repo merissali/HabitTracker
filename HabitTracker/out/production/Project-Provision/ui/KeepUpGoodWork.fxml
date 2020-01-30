@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="391.0"
+            prefWidth="524.0" xmlns="http://javafx.com/javafx/8.0.999-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ui.OtherPagesController">
+    <children>
+        <Label layoutX="34.0" layoutY="52.0" text="Keep up the good work!" textFill="#91e0f2">
+            <font>
+                <Font name="Charter Black Italic" size="38.0"/>
+            </font>
+        </Label>
+        <ImageView fx:id="dog" fitHeight="250.0" fitWidth="300.0" layoutX="137.0" layoutY="115.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="file:/Users/Owner/Documents/GitHub/project_z0n2b/src/uwu.jpg"/>
+            </image>
+        </ImageView>
+        <Button fx:id="backButton" layoutX="11.0" layoutY="11.0" maxWidth="-Infinity" minWidth="-Infinity"
+                mnemonicParsing="false" onMouseReleased="#viewFrontPage" prefHeight="27.0" prefWidth="150.0"
+                text="BACK TO FRONT PAGE" textFill="#1cb5b5b5">
+            <font>
+                <Font size="11.0"/>
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

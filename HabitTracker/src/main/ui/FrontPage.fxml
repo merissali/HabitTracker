@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" prefHeight="391.0" prefWidth="524.0" vgap="10"
+          xmlns="http://javafx.com/javafx/8.0.999-ea" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="ui.FrontPageController">
+    <columnConstraints>
+        <ColumnConstraints minWidth="10.0" prefWidth="10.0"/>
+        <ColumnConstraints/>
+        <ColumnConstraints/>
+        <ColumnConstraints/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="270.0" prefWidth="356.0" GridPane.columnIndex="1" GridPane.halignment="CENTER"
+                    GridPane.rowIndex="7" GridPane.valignment="CENTER">
+            <children>
+                <Button fx:id="numberOne" layoutX="55.0" mnemonicParsing="false" onMouseReleased="#viewAddNew"
+                        prefHeight="27.0" prefWidth="246.0" text="Add a new category and habit"/>
+                <Button fx:id="numberTwo" layoutX="55.0" layoutY="27.0" mnemonicParsing="false"
+                        onMouseReleased="#viewViewCategory" prefHeight="27.0" prefWidth="246.0"
+                        text="View habits of a certain category"/>
+                <Button fx:id="numberThree" layoutX="55.0" layoutY="54.0" mnemonicParsing="false"
+                        onMouseReleased="#viewCheckOff" prefHeight="27.0" prefWidth="246.0" text="Check off habit"/>
+                <Button fx:id="numberFour" layoutX="55.0" layoutY="81.0" mnemonicParsing="false"
+                        onMouseReleased="#viewViewDaily" prefHeight="27.0" prefWidth="246.0"
+                        text="View today's habits"/>
+                <Button fx:id="numberFive" layoutX="55.0" layoutY="108.0" mnemonicParsing="false" prefHeight="27.0"
+                        prefWidth="246.0" text="Load previous habit list"/>
+                <Button fx:id="numberSix" layoutX="55.0" layoutY="135.0" mnemonicParsing="false"
+                        onMouseReleased="#viewRelatedHabits" prefHeight="27.0" prefWidth="246.0"
+                        text="View habits related to a certain habit"/>
+                <Button fx:id="numberSeven" layoutX="55.0" layoutY="162.0" mnemonicParsing="false" prefHeight="27.0"
+                        prefWidth="246.0" text="Reset habit list"/>
+            </children>
+        </AnchorPane>
+        <Label fx:id="habitTracker" alignment="TOP_CENTER" prefHeight="60.0" prefWidth="340.0" text="habit tracker"
+               textFill="#f5c63d" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+               GridPane.valignment="CENTER">
+            <font>
+                <Font name="Courier Bold" size="42.0"/>
+            </font>
+        </Label>
+        <Label fx:id="question" alignment="CENTER" prefHeight="35.0" prefWidth="343.0" text="What would you like to do?"
+               textAlignment="RIGHT" textFill="#79c7d7" wrapText="true" GridPane.columnIndex="1"
+               GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+            <font>
+                <Font name="Ayuthaya" size="15.0"/>
+            </font>
+        </Label>
+    </children>
+    <effect>
+        <Glow/>
+    </effect>
+</GridPane>
